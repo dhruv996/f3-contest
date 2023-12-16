@@ -42,14 +42,14 @@ let zz=document.querySelector(".zz");
           y.innerText=startcount;
           if(priority==="High"){
             ycount++;
-        yy.innerHTML=${ycount} of ${startcount};
+        yy.innerHTML=`${ycount} of ${startcount}`;
           }
         box3.appendChild(div);
     }else if(status==="Done"){
         finishcount++;
         if(priority==="High"){
             zcount++;
-        zz.innerHTML=${zcount} of ${finishcount};
+        zz.innerHTML=`${zcount} of ${finishcount}`;
           }
           
           z.innerText=finishcount;
@@ -58,7 +58,7 @@ let zz=document.querySelector(".zz");
         todocount++;
         if(priority==="High"){
             xcount++;
-        xx.innerHTML=${xcount} of ${todocount};
+        xx.innerHTML=`${xcount} of ${todocount}`;
           }
         
           x.innerText=todocount;
@@ -97,15 +97,3 @@ c.addEventListener("click",()=>{
     }
 })
 }
-
-let search=document.querySelector(".search");
-
-serach.addEventListener("input",()=>{
-    let h1=document.querySelector(".h1");
-      
-    if(h1.innerHTML.indexOf(search.value)>-1){
-          h1.style.display="block"
-    }else{
-        h1.style.display="none"
-    }
-})
